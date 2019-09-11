@@ -16,9 +16,10 @@ class CreatePaisesTable extends Migration
         
         Schema::create('paises', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('pais');
+            $table->string('deporte');
             $table->string('descripcion');
             $table->string('historia');
+            $table->string('imagen');
             $table->timestamps();
 
         });
